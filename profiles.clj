@@ -1,12 +1,12 @@
 {:user {
         :plugins [
-                  [cider/cider-nrepl "0.9.0-SNAPSHOT"]
+                  [cider/cider-nrepl "0.8.2"]
                   [lein-kibit "RELEASE"]
                   [lein-marginalia "0.7.1"]
                   [lein-deps-tree "0.1.2"]
                   [lein-ritz "0.7.0"]
                   [lein-ring "0.8.7"]
-                  [org.clojars.hozumi/hiccup-bridge "1.0.0-SNAPSHOT"]
+                  ;; [org.clojars.hozumi/hiccup-bridge "1.0.0-SNAPSHOT"]
                   ;; from cldwalker / leinfiles
                   [lein-difftest "2.0.0"]
                   [lein-grep "0.1.0"]
@@ -17,15 +17,9 @@
                   ;;[lein-pprint "1.1.1"]
                   ;;[lein-spell "0.1.0"]
                   ]
-        :repl-options {
-                       ;;                       :nrepl-middleware [ritz.nrepl.middleware.javadoc/wrap-javadoc
-                       ;;                                          ritz.nrepl.middleware.simple-complete/wrap-simple-complete]
-                      :nrepl-middleware [cider.nrepl.middleware.classpath/wrap-classpath
-                                          cider.nrepl.middleware.complete/wrap-complete
-                                          cider.nrepl.middleware.info/wrap-info
-                                          cider.nrepl.middleware.inspect/wrap-inspect
-                                          cider.nrepl.middleware.stacktrace/wrap-stacktrace
-                                          cider.nrepl.middleware.trace/wrap-trace]
+        :repl-options {:nrepl-middleware
+                       [ritz.nrepl.middleware.javadoc/wrap-javadoc
+                        ritz.nrepl.middleware.simple-complete/wrap-simple-complete]
                        :init (do
                                ;;(use 'desc.core)
                                ;;(use 'rubydoc.core)
