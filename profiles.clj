@@ -1,6 +1,6 @@
 {:user {
         :plugins [
-                  [cider/cider-nrepl "0.8.2"]
+                  [cider/cider-nrepl "0.10.0-SNAPSHOT"]
                   [lein-kibit "RELEASE"]
                   [lein-marginalia "0.7.1"]
                   [lein-deps-tree "0.1.2"]
@@ -27,6 +27,7 @@
 ;;                               (load-file (str (System/getProperty "user.home") "/.lein/user.clj"))
                                ) }
         :dependencies [[ritz/ritz-nrepl-middleware "0.7.0"]
+                       [org.clojure/tools.nrepl "0.2.10"]
                        ;;[table "0.4.0"]
                        ;;[desc "0.1.0"]
                        ;;[rubydoc "0.3.0"]
