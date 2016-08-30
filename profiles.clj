@@ -1,6 +1,6 @@
 {:user {
         :plugins      [
-                       [cider/cider-nrepl "0.13.0-snapshot"]
+                       [cider/cider-nrepl "0.14.0-snapshot"]
                        [refactor-nrepl "2.3.0-SNAPSHOT"]
                        ;; [lein-kibit "RELEASE"]
                        ;; [lein-marginalia "0.7.1"]
